@@ -49,3 +49,12 @@ header {
   font-weight: 400;
   width: 90vw;
 }
+
+.social-media-icon {
+  margin: 0;
+  padding-left: 3px;
+  display: inline-flex;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+}
