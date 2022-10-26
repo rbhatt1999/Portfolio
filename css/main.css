@@ -8,6 +8,10 @@ header {
   align-items: center;
 }
 
+.hamburger-menu {
+  width: 30px;
+}
+
 .title h5 {
   color: white;
   font-size: 18px;
