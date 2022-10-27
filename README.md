@@ -35,7 +35,7 @@ Download Repo
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/rbhatt199924)
+- GitHub: [@githubhandle](https://github.com/rbhatt1999)
 - Twitter: [@twitterhandle](https://twitter.com/rohitbh02837778)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rohit-bhatt-747166193/)
 
