@@ -258,6 +258,7 @@ header {
   flex-direction: column;
   background-color: #1c1a19;
   padding-top: 120px;
+  padding-bottom: 80px;
   background-image: url(../icons/illustration-about-me-mobile.png);
   background-repeat: no-repeat;
   background-size: auto;
