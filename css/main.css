@@ -74,13 +74,12 @@ header {
 }
 
 .work-container {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
   margin: 120px 0;
-  
 }
 
-.work-container h2{
+.work-container h2 {
   font-family: 'Crete Round', serif;
   font-size: 40px;
   line-height: 83px;
@@ -89,7 +88,7 @@ header {
   margin: 0 24px 24px 24px;
   border-bottom: 2px solid #c8c8c8;
   display: inline;
-  color: #1C1A19;
+  color: #1c1a19;
 }
 
 .project-1 {
@@ -98,16 +97,16 @@ header {
 }
 
 .project-1 img {
- padding: 80px 24px 0 24px;
+  padding: 80px 24px 0 24px;
 }
 
 .project-1 h3 {
-  margin: 24px 24px 0px 24px;
+  margin: 24px 24px 0 24px;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-1 p {
@@ -117,7 +116,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .used-language-1 {
@@ -130,45 +129,30 @@ header {
 .used-language-1 li {
   list-style: none;
   padding: 10px 12px;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
 }
 
 .used-language-1 li a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-style:normal;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-1 button {
   margin: 12px 0 0 24px;
   width: 124px;
   height: 48px;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   border-style: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
-}
-
-.project-1 button:enabled {
-  background: #FF6B00;
-  color: #ffffff;
-}
-
-.project-1 button:hover {
-  color: #fff;
-  background: #f1883d;
-}
-
-.project-1 button:active {
-  background: #f2ba92;
-  color: #fff;
 }
 
 .projects {
@@ -178,17 +162,17 @@ header {
   background-image: url(../images/project-2.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: top;  
+  background-position: top;
 }
 
 .projects h3 {
   padding: 84px 16px 0 16px;
-  margin:0;
+  margin: 0;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  color: #FFF;
+  color: #fff;
   line-height: 44px;
 }
 
@@ -199,7 +183,7 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
   line-height: 24px;
 }
 
@@ -219,7 +203,7 @@ header {
 .used-language-2 li a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-style:normal;
+  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   color: #fff;
@@ -228,29 +212,14 @@ header {
 .projects button {
   margin-top: 22px;
   height: 48px;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   border-style: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
-}
-
-.projects button:enabled {
-  background: #FF6B00;
-  color: #ffffff;
-}
-
-.projects button:hover {
-  color: #fff;
-  background: #f1883d;
-}
-
-.projects button:active {
-  background: #f2ba92;
-  color: #fff;
 }
 
 .about-me {
@@ -291,26 +260,56 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .about-me-text button {
   margin: 24px 0 206px 0;
   width: 161px;
   height: 48px;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   border-style: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
 }
 
+.project-1 button:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.project-1 button:hover {
+  color: #fff;
+  background: #f1883d;
+}
+
+.project-1 button:active {
+  background: #f2ba92;
+  color: #fff;
+}
+
+.projects button:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.projects button:hover {
+  color: #fff;
+  background: #f1883d;
+}
+
+.projects button:active {
+  background: #f2ba92;
+  color: #fff;
+}
+
 .about-me-text button:enabled {
-  background: #FF6B00;
-  color: #ffffff;
+  background: #ff6b00;
+  color: #fff;
 }
 
 .about-me-text button:hover {
@@ -322,6 +321,7 @@ header {
   background: #f2ba92;
   color: #fff;
 }
+
 .strength {
   display: grid;
   grid-template-columns: 1fr;
@@ -356,12 +356,12 @@ header {
   text-decoration: none;
 }
 
-.strength-type{
+.strength-type {
   margin: 44px 0 44px 0;
   padding: 0;
 }
 
-.strength-type li{
+.strength-type li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -378,5 +378,5 @@ header {
 }
 
 .strength-type li:first-child {
-margin-top: 0;
+  margin-top: 0;
 }
