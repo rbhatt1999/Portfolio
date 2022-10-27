@@ -153,6 +153,22 @@ header {
   font-weight: 700;
   font-size: 17px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.project-1 button:enabled {
+  background: #FF6B00;
+  color: #ffffff;
+}
+
+.project-1 button:hover {
+  color: #fff;
+  background: #f1883d;
+}
+
+.project-1 button:active {
+  background: #f2ba92;
+  color: #fff;
 }
 
 .projects {
@@ -219,6 +235,22 @@ header {
   font-weight: 700;
   font-size: 17px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.projects button:enabled {
+  background: #FF6B00;
+  color: #ffffff;
+}
+
+.projects button:hover {
+  color: #fff;
+  background: #f1883d;
+}
+
+.projects button:active {
+  background: #f2ba92;
+  color: #fff;
 }
 
 .about-me {
@@ -272,8 +304,23 @@ header {
   font-weight: 700;
   font-size: 17px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
+.about-me-text button:enabled {
+  background: #FF6B00;
+  color: #ffffff;
+}
+
+.about-me-text button:hover {
+  color: #fff;
+  background: #f1883d;
+}
+
+.about-me-text button:active {
+  background: #f2ba92;
+  color: #fff;
+}
 .strength {
   display: grid;
   grid-template-columns: 1fr;
