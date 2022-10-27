@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
 
 header {
   padding: 0 20px 0 20px;
@@ -76,7 +76,8 @@ header {
 .work-container {
   display:grid;
   grid-template-columns: 1fr;
-  margin: 120px 0 0 0;
+  margin: 120px 0;
+  
 }
 
 .work-container h2{
@@ -218,4 +219,116 @@ header {
   font-weight: 700;
   font-size: 17px;
   color: #FFFFFF;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  padding-top: 120px;
+  background-image: url(../icons/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  background-position-y: 390px;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+  border-bottom: 2px solid #c8c8c8;
+  min-height: 538px;
+}
+
+.about-me-text h2 {
+  margin: 0;
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about-me-text p {
+  margin: 0;
+  padding-top: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F4F5F7;
+}
+
+.about-me-text button {
+  margin: 24px 0 206px 0;
+  width: 161px;
+  height: 48px;
+  background-color: #FF6B00;
+  border-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.strength {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 136px;
+  padding: 0;
+}
+
+.strength li {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.strength-language {
+  list-style-image: url(../icons/Rectangle-bullet.png);
+  list-style-position: inside;
+}
+
+.strength-frameworks {
+  list-style-image: url(../icons/Rectangle-bullet-2.png);
+  list-style-position: inside;
+}
+
+.strength-skills {
+  list-style-image: url(../icons/circle-bullet.png);
+  list-style-position: inside;
+}
+
+.strength li a {
+  color: white;
+  text-decoration: none;
+}
+
+.strength-type{
+  margin: 44px 0 44px 0;
+  padding: 0;
+}
+
+.strength-type li{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  list-style: none;
+  margin-top: 32px;
+  padding-left: -1000px;
+  text-align: center;
+}
+
+.strength-type li a {
+  color: white;
+  text-decoration: none;
+}
+
+.strength-type li:first-child {
+margin-top: 0;
 }
