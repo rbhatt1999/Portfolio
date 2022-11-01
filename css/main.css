@@ -283,13 +283,19 @@ header {
 }
 
 .project-1 button:hover {
-  color: #fff;
-  background: #f1883d;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .project-1 button:active {
-  background: #f2ba92;
+  background: #e05304;
   color: #fff;
+}
+
+.project-1 button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .projects button:enabled {
@@ -298,13 +304,19 @@ header {
 }
 
 .projects button:hover {
-  color: #fff;
-  background: #f1883d;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .projects button:active {
-  background: #f2ba92;
+  background: #e05304;
   color: #fff;
+}
+
+.projects button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .about-me-text button:enabled {
@@ -313,13 +325,19 @@ header {
 }
 
 .about-me-text button:hover {
-  color: #fff;
-  background: #f1883d;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .about-me-text button:active {
-  background: #f2ba92;
+  background: #e05304;
   color: #fff;
+}
+
+.about-me-text button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .strength {
@@ -379,9 +397,6 @@ header {
 
 .contact-form {
   margin: 120px 0 0 0;
-  padding-bottom: 8px;
-  display: flex;
-  flex-direction: column;
 }
 
 .contact-form p {
@@ -480,13 +495,25 @@ header {
 }
 
 .contact-form-button:hover {
-  color: #fff;
-  background: #f1883d;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .contact-form-button:active {
-  background: #f2ba92;
+  background: #e05304;
   color: #fff;
+}
+
+.contact-form-button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-icon {
