@@ -474,6 +474,21 @@ header {
   cursor: pointer;
 }
 
+.contact-form-button:enabled {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.contact-form-button:hover {
+  color: #fff;
+  background: #f1883d;
+}
+
+.contact-form-button:active {
+  background: #f2ba92;
+  color: #fff;
+}
+
 .footer-icon {
   margin: 25px 0 0 0;
   padding: 0;
