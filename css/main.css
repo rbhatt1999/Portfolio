@@ -458,3 +458,17 @@ header {
 #message::placeholder {
   color: #3c3a39;
 }
+
+.contact-form-button {
+  margin: 12px 0 0 24px;
+  width: 124px;
+  height: 48px;
+  background-color: #ff6b00;
+  border-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
