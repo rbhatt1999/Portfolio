@@ -421,3 +421,21 @@ header {
   border-bottom: 2px solid #dbd8d7;
   padding-bottom: 14px;
 }
+
+#email {
+  width: 295px;
+  height: 18px;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 16px 0 16px;
+}
+
+#email::placeholder {
+  color: #979493;
+}
+
+.email-label {
+  border-bottom: 2px solid #dbd8d7;
+  padding-bottom: 14px;
+}
