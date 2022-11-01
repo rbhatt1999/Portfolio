@@ -377,16 +377,15 @@ header {
   text-decoration: none;
 }
 
-.strength-type li:first-child {
-  margin-top: 0;
-}
-
 .contact-form {
-  margin: 120px 24px 0 24px;
+  margin: 120px 0 0 0;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form p {
-  margin: 0;
+  margin: 0 24px 0 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -402,6 +401,8 @@ header {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  padding: 0 24px 124px 24px;
+  border-bottom: 2px solid #dfe1e6;
 }
 
 .name-label {
@@ -460,8 +461,8 @@ header {
 }
 
 .contact-form-button {
-  margin: 12px 0 0 24px;
-  width: 124px;
+  margin: 24px 98px 0 98px;
+  width: 131px;
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
@@ -471,4 +472,28 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+}
+
+.footer-icon {
+  margin: 25px 0 0 0;
+  padding: 0;
+  display: flex;
+  column-gap: 21px;
+  justify-content: center;
+}
+
+.footer-icon li {
+  list-style: none;
+}
+
+.strength-type li:first-child {
+  margin-top: 0;
+}
+
+.bottom-line {
+  margin-top: 23px;
+  width: 134px;
+  border-bottom: 5px solid #0d151e;
+  align-self: center;
+  border-radius: 10px;
 }
