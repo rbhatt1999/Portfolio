@@ -380,3 +380,44 @@ header {
 .strength-type li:first-child {
   margin-top: 0;
 }
+
+.contact-form {
+  margin: 120px 24px 0 24px;
+  padding-bottom: 2000px;
+}
+
+.contact-form p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  text-align: center;
+}
+
+.contact-form form {
+  margin-top: 40px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#name {
+  width: 295px;
+  height: 18px;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 16px 0 16px;
+}
+
+#name::placeholder {
+  color: #979493;
+}
+
+.name-label {
+  border-bottom: 2px solid #dbd8d7;
+  padding-bottom: 14px;
+}
