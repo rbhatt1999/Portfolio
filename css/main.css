@@ -383,7 +383,6 @@ header {
 
 .contact-form {
   margin: 120px 24px 0 24px;
-  padding-bottom: 2000px;
 }
 
 .contact-form p {
@@ -401,7 +400,13 @@ header {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-label {
+  border-bottom: 2px solid #dbd8d7;
+  padding-bottom: 14px;
 }
 
 #name {
@@ -417,9 +422,10 @@ header {
   color: #979493;
 }
 
-.name-label {
+.email-label {
   border-bottom: 2px solid #dbd8d7;
   padding-bottom: 14px;
+  margin-top: 40px;
 }
 
 #email {
@@ -435,7 +441,20 @@ header {
   color: #979493;
 }
 
-.email-label {
-  border-bottom: 2px solid #dbd8d7;
-  padding-bottom: 14px;
+.message-label {
+  margin-top: 40px;
+}
+
+#message {
+  width: 295px;
+  height: 114px;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 16px 0 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+#message::placeholder {
+  color: #3c3a39;
 }
