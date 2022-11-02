@@ -426,7 +426,7 @@ header {
 }
 
 #name {
-  width: 295px;
+  width: 100%;
   height: 18px;
   border: none;
   font-weight: 400;
@@ -445,7 +445,7 @@ header {
 }
 
 #email {
-  width: 295px;
+  width: 100%;
   height: 18px;
   border: none;
   font-weight: 400;
@@ -462,7 +462,7 @@ header {
 }
 
 #message {
-  width: 295px;
+  width: 100%;
   height: 114px;
   border: none;
   font-weight: 400;
@@ -476,7 +476,7 @@ header {
 }
 
 .contact-form-button {
-  margin: 24px 98px 0 98px;
+  align-self: center;
   width: 131px;
   height: 48px;
   background-color: #ff6b00;
