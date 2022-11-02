@@ -29,7 +29,7 @@ header {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
   header {
     padding: 0 151px 0 154px;
   }
@@ -104,14 +104,14 @@ header {
   list-style: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
   .headline-container {
     padding-left: 9em;
     position: relative;
     background-image: url(../icons/Illustration-header-desktop.png);
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 41em;
   }
 
   .headline-container h1 {
@@ -149,6 +149,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   margin: 120px 0;
+  gap: 24px;
 }
 
 .work-container h2 {
@@ -157,15 +158,19 @@ header {
   line-height: 83px;
   font-weight: 400;
   text-align: center;
-  margin: 0 24px 24px 24px;
-  border-bottom: 2px solid #c8c8c8;
+  margin: 0 24px 0 12px;
   display: inline;
   color: #1c1a19;
 }
 
+.underline {
+  margin: 0 24px 24px 24px;
+  border-bottom: 2px solid #c8c8c8;
+}
+
 .project-1 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .project-1 img {
@@ -196,6 +201,8 @@ header {
   padding: 0;
   margin: 13px 0 0 24px;
   column-gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .used-language-1 li {
@@ -231,10 +238,15 @@ header {
   display: flex;
   flex-direction: column;
   margin: 24px 24px 0 24px;
+}
+
+.projects-info {
   background-image: url(../images/project-2.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects h3 {
@@ -261,9 +273,10 @@ header {
 
 .used-language-2 {
   display: flex;
-  padding: 12px 0 0 16px;
+  padding: 12px 0 24px 16px;
   margin: 0;
   column-gap: 12px;
+  flex-wrap: wrap;
 }
 
 .used-language-2 li {
@@ -282,7 +295,6 @@ header {
 }
 
 .projects button {
-  margin-top: 22px;
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
@@ -292,6 +304,76 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+}
+
+@media (min-width: 1100px) {
+  .work-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 124px 143px 130px 143px;
+    gap: 24px;
+  }
+
+  .work-container h2 {
+    grid-area: 1/1/2/2;
+    line-height: 52px;
+    color: #091e42;
+    margin-bottom: 114px;
+  }
+
+  .underline {
+    grid-area: 1/2/2/4;
+    height: 1px;
+    align-self: center;
+    margin: 0 0 114px 0;
+  }
+
+  .project-1 {
+    grid-area: 2/1/3/4;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-1 img {
+    padding: 0;
+    width: 648px;
+    height: auto;
+  }
+
+  .project-1 h3 {
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  .project-1 p {
+    margin-right: 0;
+    margin-top: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .used-language-1 {
+    margin-top: 24px;
+  }
+
+  .project-info button {
+    margin-top: 24px;
+  }
+
+  .projects {
+    margin: 0;
+  }
+
+  .projects-info {
+    height: 435px;
+    justify-content: end;
+  }
+
+  .projects p {
+    max-width: 337px;
+  }
 }
 
 .about-me {
