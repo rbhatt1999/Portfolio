@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;600;700&family=Poppins&family=Roboto:wght@700&display=swap');
 
 header {
   padding: 0 20px 0 20px;
@@ -22,6 +22,37 @@ header {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  margin: 0;
+}
+
+.navbars {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 0 151px 0 154px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .navbars {
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .headline-container {
@@ -42,7 +73,7 @@ header {
   font-family: 'Crete Round', serif;
   font-size: 56px;
   font-weight: 400;
-  line-height: 1.1em;
+  line-height: 64px;
 }
 
 .headline-container h3 {
@@ -58,7 +89,7 @@ header {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  width: 88vw;
+  max-width: 88vw;
 }
 
 .social-media-icon {
@@ -71,6 +102,47 @@ header {
 
 .social-media-icon li {
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .headline-container {
+    padding-left: 9em;
+    position: relative;
+    background-image: url(../icons/Illustration-header-desktop.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+  .headline-container h1 {
+    padding-top: 192px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 81.5px;
+  }
+
+  .social-media-icon {
+    flex-direction: column;
+    row-gap: 21px;
+    position: absolute;
+    left: 36px;
+    top: 270px;
+  }
+
+  .headline-container h3 {
+    padding-top: 24px;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  .headline-container p {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    max-width: 566px;
+  }
 }
 
 .work-container {
@@ -431,7 +503,7 @@ header {
   border: none;
   font-weight: 400;
   font-size: 15px;
-  margin: 0 16px 0 16px;
+  margin: 0 0 0 16px;
 }
 
 #name::placeholder {
@@ -450,7 +522,7 @@ header {
   border: none;
   font-weight: 400;
   font-size: 15px;
-  margin: 0 16px 0 16px;
+  margin: 0 0 0 16px;
 }
 
 #email::placeholder {
@@ -467,7 +539,7 @@ header {
   border: none;
   font-weight: 400;
   font-size: 15px;
-  margin: 0 16px 0 16px;
+  margin: 0 0 0 16px;
   font-family: 'Inter', sans-serif;
 }
 
