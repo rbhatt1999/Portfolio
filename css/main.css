@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;600;700&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;600;700&family=Poppins&family=Roboto:wght@400;700&display=swap');
 
 header {
   padding: 0 20px 0 20px;
@@ -589,6 +589,9 @@ header {
 
 .contact-form {
   margin: 120px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #dfe1e6;
 }
 
 .contact-form p {
@@ -609,7 +612,6 @@ header {
   display: flex;
   flex-direction: column;
   padding: 0 24px 124px 24px;
-  border-bottom: 2px solid #dfe1e6;
 }
 
 .name-label {
@@ -730,4 +732,42 @@ footer {
   border-bottom: 5px solid #0d151e;
   align-self: center;
   border-radius: 10px;
+}
+
+@media (min-width: 1100px) {
+  .contact-form {
+    flex-direction: row;
+    margin-left: 135px;
+    margin-right: 142px;
+    column-gap: 24px;
+  }
+
+  .contact-form p {
+    max-width: 415px;
+    margin: 0;
+    text-align: start;
+    font-size: 40px;
+    color: #262626;
+  }
+
+  .contact-form form {
+    flex: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-right: 0;
+  }
+
+  .contact-form-button {
+    align-self: auto;
+    margin-left: 16px;
+  }
+
+  .bottom-line {
+    display: none;
+  }
+
+  #message {
+    background-color: #fbf8f7;
+    padding-top: 12px;
+  }
 }
