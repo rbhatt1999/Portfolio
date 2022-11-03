@@ -368,6 +368,11 @@ header {
     padding: 0;
     width: 100%;
     height: auto;
+    transition: all 200ms linear 1ms;
+  }
+
+  .project-1 img:hover {
+    transform: scale(1.05);
   }
 
   .project-1 h3 {
@@ -396,11 +401,16 @@ header {
 
   .projects {
     margin: 0;
+    transition: all 200ms linear 1ms;
   }
 
   .projects-info {
     height: 435px;
     justify-content: end;
+  }
+
+  .projects:hover {
+    transform: scale(1.06);
   }
 
   .projects p {
@@ -722,6 +732,7 @@ header {
   font-weight: 400;
   font-size: 15px;
   margin: 0 0 0 16px;
+  transition: all 200ms linear 1ms;
 }
 
 #name::placeholder {
@@ -741,6 +752,7 @@ header {
   font-weight: 400;
   font-size: 15px;
   margin: 0 0 0 16px;
+  transition: all 200ms linear 1ms;
 }
 
 #email::placeholder {
@@ -759,6 +771,7 @@ header {
   font-size: 15px;
   margin: 0 0 0 16px;
   font-family: 'Inter', sans-serif;
+  transition: all 200ms linear 1ms;
 }
 
 #message::placeholder {
@@ -866,5 +879,12 @@ footer {
   #message {
     background-color: #fbf8f7;
     padding-top: 12px;
+  }
+
+  #name:hover,
+  #email:hover,
+  #message:hover {
+    padding-top: 25px;
+    color: blue;
   }
 }
