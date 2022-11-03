@@ -173,8 +173,12 @@ header {
   grid-template-columns: 1fr;
 }
 
+.project-1-img {
+  margin: 0 24px 0 24px;
+}
+
 .project-1 img {
-  padding: 80px 24px 0 24px;
+  width: 100%;
 }
 
 .project-1 h3 {
@@ -200,7 +204,7 @@ header {
   display: flex;
   padding: 0;
   margin: 13px 0 0 24px;
-  column-gap: 12px;
+  gap: 12px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -275,7 +279,7 @@ header {
   display: flex;
   padding: 12px 0 24px 16px;
   margin: 0;
-  column-gap: 12px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
