@@ -262,6 +262,7 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+  transition: all 400ms linear 1ms;
 }
 
 .projects {
