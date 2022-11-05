@@ -335,6 +335,7 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+  transition: all 400ms linear 1ms;
 }
 
 @media (min-width: 1100px) {
@@ -523,6 +524,7 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+  transition: all 400ms linear 1ms;
 }
 
 .project-1 button:enabled {
@@ -775,6 +777,7 @@ header {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+  transition: all 400ms linear 1ms;
 }
 
 .contact-form-button:enabled {
