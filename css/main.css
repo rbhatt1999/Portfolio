@@ -23,6 +23,17 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin: 0;
+  animation: rotate 1000ms linear 1ms 1 forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+
+  to {
+    transform: rotate3d(1, 0, 0, 360deg);
+  }
 }
 
 .navbars {
