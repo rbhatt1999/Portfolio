@@ -8,10 +8,6 @@
 - HTML
 - CSS
 
-## Live Demo
-
-[Live Demo Link](https://rbhatt1999.github.io/Portfolio/)
-
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
