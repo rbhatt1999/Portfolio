@@ -123,8 +123,7 @@ header {
     background-position: right top;
     background-repeat: no-repeat;
     background-size: 41em;
-    animation: rtl 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal
-      forwards;
+    animation: rtl 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal forwards;
   }
 
   @keyframes rtl {
@@ -144,8 +143,7 @@ header {
     font-weight: 400;
     line-height: 81.5px;
     display: inline-block;
-    animation: ltr 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal
-      forwards;
+    animation: ltr 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal forwards;
   }
 
   @keyframes ltr {
