@@ -17,7 +17,7 @@ header {
   text-decoration: none;
 }
 
-.title h5 {
+.title h1 {
   color: #fff;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -87,7 +87,7 @@ header {
   line-height: 64px;
 }
 
-.headline-container h3 {
+.headline-container h2 {
   margin: 0;
   color: white;
   font-size: 24px;
@@ -164,7 +164,7 @@ header {
     top: 270px;
   }
 
-  .headline-container h3 {
+  .headline-container h2 {
     padding-top: 24px;
     font-size: 32px;
     font-family: 'Inter', sans-serif;
