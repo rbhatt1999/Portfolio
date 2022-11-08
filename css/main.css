@@ -549,7 +549,7 @@ header {
 
 .project-1 button:enabled {
   background: #ff6b00;
-  color: #050505;
+  color: #fff;
 }
 
 .project-1 button:hover {
@@ -570,7 +570,7 @@ header {
 
 .projects button:enabled {
   background: #ff6b00;
-  color: #050505;
+  color: #fff;
 }
 
 .projects button:hover {
@@ -591,7 +591,7 @@ header {
 
 .about-me-text button:enabled {
   background: #ff6b00;
-  color: #050505;
+  color: #fff;
 }
 
 .about-me-text button:hover {
@@ -805,7 +805,7 @@ header {
 
 .contact-form-button:enabled {
   background: #ff6b00;
-  color: #050505;
+  color: #fff;
 }
 
 .contact-form-button:hover {
