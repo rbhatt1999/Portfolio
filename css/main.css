@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;600;700&family=Poppins&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Gothic+A1:wght@700&family=Inter:wght@400;500;600;700&family=Poppins&family=Roboto:wght@400;700&display=swap");
 
 header {
   padding: 0 20px 0 20px;
@@ -20,7 +20,7 @@ header {
 .title h1 {
   color: #fff;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin: 0;
   animation: rotate 1000ms linear 1ms 1 forwards;
@@ -56,7 +56,7 @@ header {
 
   .navbars {
     display: inline;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -74,14 +74,14 @@ header {
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 35vh;
-  height: 95vh;
+  min-height: 95vh;
 }
 
 .headline-container h1 {
   margin: 0;
   padding-top: 120px;
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -91,14 +91,14 @@ header {
   margin: 0;
   color: white;
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
 .headline-container p {
   color: white;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   max-width: 88vw;
 }
@@ -123,7 +123,8 @@ header {
     background-position: right top;
     background-repeat: no-repeat;
     background-size: 41em;
-    animation: rtl 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal forwards;
+    animation: rtl 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal
+      forwards;
   }
 
   @keyframes rtl {
@@ -143,7 +144,8 @@ header {
     font-weight: 400;
     line-height: 81.5px;
     display: inline-block;
-    animation: ltr 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal forwards;
+    animation: ltr 1.5s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal
+      forwards;
   }
 
   @keyframes ltr {
@@ -167,7 +169,7 @@ header {
   .headline-container h2 {
     padding-top: 24px;
     font-size: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     animation: ltr 3s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal forwards;
   }
@@ -175,7 +177,7 @@ header {
   .headline-container p {
     font-size: 20px;
     line-height: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     max-width: 566px;
     animation: ltr 3s cubic-bezier(0.63, -0.2, 0.41, 1.26) 0s 1 normal forwards;
@@ -190,7 +192,7 @@ header {
 }
 
 .work-container h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 40px;
   line-height: 83px;
   font-weight: 400;
@@ -220,7 +222,7 @@ header {
 
 .project-1 h3 {
   margin: 24px 24px 0 24px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -229,7 +231,7 @@ header {
 
 .project-1 p {
   margin: 12px 24px 0 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -254,7 +256,7 @@ header {
 
 .used-language-1 li a {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -267,7 +269,7 @@ header {
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -295,7 +297,7 @@ header {
 .projects h3 {
   padding: 84px 16px 0 16px;
   margin: 0;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -306,7 +308,7 @@ header {
 .projects p {
   padding: 12px 16px 0 16px;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -330,7 +332,7 @@ header {
 
 .used-language-2 li a {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -341,7 +343,7 @@ header {
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -395,7 +397,7 @@ header {
   .project-1 p {
     margin-right: 0;
     margin-top: 24px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -517,7 +519,7 @@ header {
 .about-me-text h2 {
   margin: 0;
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-size: 72px;
   font-weight: 400;
   text-align: center;
@@ -526,7 +528,7 @@ header {
 .about-me-text p {
   margin: 0;
   padding-top: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -540,7 +542,7 @@ header {
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -620,7 +622,7 @@ header {
 }
 
 .strength li {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -652,7 +654,7 @@ header {
 }
 
 .strength-type li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -689,7 +691,7 @@ header {
 
   .about-me-text p {
     max-width: 566px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 32px;
     color: #f4f5f7;
@@ -714,7 +716,7 @@ header {
 
 .contact-form p {
   margin: 0 24px 0 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -724,7 +726,7 @@ header {
 
 .contact-form form {
   margin-top: 40px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   display: flex;
@@ -782,7 +784,7 @@ header {
   font-weight: 400;
   font-size: 15px;
   margin: 0 0 0 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   transition: all 200ms linear 1ms;
 }
 
@@ -796,7 +798,7 @@ header {
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -874,7 +876,7 @@ footer {
 
   .contact-form form {
     flex: 2;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     padding-right: 0;
   }
