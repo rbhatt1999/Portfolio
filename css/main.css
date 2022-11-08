@@ -15,9 +15,7 @@ header {
 
 .title a {
   text-decoration: none;
-}
-
-.title h1 {
+  display: inline-block;
   color: #fff;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -28,7 +26,7 @@ header {
 
 @keyframes rotate {
   from {
-    transform: rotate3d(0, 0, 0, 0);
+    transform: rotate3d(1, 0, 0, 0);
   }
 
   to {
