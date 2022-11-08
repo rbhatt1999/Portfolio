@@ -283,6 +283,7 @@ header {
 }
 
 .projects-info {
+  background-color: black;
   background-image: url(../images/project-2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -550,7 +551,7 @@ header {
 
 .project-1 button:enabled {
   background: #ff6b00;
-  color: #fff;
+  color: #050505;
 }
 
 .project-1 button:hover {
@@ -571,7 +572,7 @@ header {
 
 .projects button:enabled {
   background: #ff6b00;
-  color: #fff;
+  color: #050505;
 }
 
 .projects button:hover {
@@ -592,7 +593,7 @@ header {
 
 .about-me-text button:enabled {
   background: #ff6b00;
-  color: #fff;
+  color: #050505;
 }
 
 .about-me-text button:hover {
@@ -806,7 +807,7 @@ header {
 
 .contact-form-button:enabled {
   background: #ff6b00;
-  color: #fff;
+  color: #050505;
 }
 
 .contact-form-button:hover {
