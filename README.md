@@ -12,6 +12,9 @@
 
 [Live Demo Link](https://rbhatt1999.github.io/Portfolio/)
 
+## Video walkthough
+[loom video link](https://www.loom.com/share/6491367c58d74175aeaf41a57ecb88f1)
+
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
