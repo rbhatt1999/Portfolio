@@ -10,7 +10,16 @@ let hamburgerIcon = document.querySelector(".hamburger-menu");
 hamburgerIcon.addEventListener("click",()=> {
     menuDiv.style.display="flex";
 });
+
 let crossIcon = document.querySelector(".cross-icon");
 crossIcon.addEventListener("click", ()=> {
     menuDiv.style.display="none";
+});
+
+let itemList = document.querySelectorAll('.menu-content>a');
+
+itemList.forEach(item => {
+  item.addEventListener("click",()=> {
+    menuDiv.style.display="none";
+  } )
 });
