@@ -1,25 +1,25 @@
-let body = document.querySelector('body');
-let menuDiv = document.createElement('div');
+const body = document.querySelector('body');
+const menuDiv = document.createElement('div');
 menuDiv.className = 'menu-content';
 menuDiv.style.display = 'none';
 
 const divContent = '<img class="cross-icon" src="./icons/cross.png" alt=""> <a href="#portfolio">Portfolio</a> <a href="#aboutMe">About</a> <a href="#contactForm">Contact</a>';
 menuDiv.innerHTML = divContent;
 body.appendChild(menuDiv);
-let hamburgerIcon = document.querySelector(".hamburger-menu");
-hamburgerIcon.addEventListener("click",()=> {
-    menuDiv.style.display="flex";
+const hamburgerIcon = document.querySelector('.hamburger-menu');
+hamburgerIcon.addEventListener('click', () => {
+  menuDiv.style.display = 'flex';
 });
 
-let crossIcon = document.querySelector(".cross-icon");
-crossIcon.addEventListener("click", ()=> {
-    menuDiv.style.display="none";
+const crossIcon = document.querySelector('.cross-icon');
+crossIcon.addEventListener('click', () => {
+  menuDiv.style.display = 'none';
 });
 
-let itemList = document.querySelectorAll('.menu-content>a');
+const itemList = document.querySelectorAll('.menu-content>a');
 
-itemList.forEach(item => {
-  item.addEventListener("click",()=> {
-    menuDiv.style.display="none";
-  } )
+itemList.forEach((item) => {
+  item.addEventListener('click', () => {
+    menuDiv.style.display = 'none';
+  });
 });
