@@ -25,12 +25,10 @@ itemList.forEach((item) => {
   });
 });
 
-const projectPopup = document.createElement('div');
-projectPopup.className='popup-container';
-projectPopup.style.display='none';
 
 let projects = [
   {
+    id:"project-1",
     h1:'Multi-Post Stories',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     language: ['css','html','bootstrap', 'Ruby'],
@@ -39,6 +37,7 @@ let projects = [
     btn2:'https://github.com/rbhatt1999/portfolio'
   },
   {
+    id:"project-2",
     h1:'Profesional Art Printing Data',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html','bootstrap', 'Ruby'],
@@ -47,6 +46,7 @@ let projects = [
     btn2:'https://github.com/rbhatt1999/portfolio'
   },
   {
+    id:"project-3",
     h1:'Profesional Art Printing Data',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html','bootstrap', 'Ruby'],
@@ -55,6 +55,7 @@ let projects = [
     btn2:'https://github.com/rbhatt1999/portfolio'
   },
   {
+    id:"project-4",
     h1:'Profesional Art Printing Data',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html','bootstrap', 'Ruby'],
@@ -63,6 +64,7 @@ let projects = [
     btn2:'https://github.com/rbhatt1999/portfolio'
   },
   {
+    id:"project-5",
     h1:'Profesional Art Printing Data',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html','bootstrap', 'Ruby'],
@@ -71,6 +73,7 @@ let projects = [
     btn2:'https://github.com/rbhatt1999/portfolio'
   },
   {
+    id:"project-6",
     h1:'Profesional Art Printing Data',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html','bootstrap', 'Ruby'],
@@ -79,6 +82,7 @@ let projects = [
     btn2:'https://github.com/rbhatt1999/portfolio'
   },
   {
+    id:"project-7",
     h1:'Profesional Art Printing Data',
     p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html','bootstrap', 'Ruby'],
@@ -88,13 +92,12 @@ let projects = [
   }  
 ];
 
-let projectButtons = document.querySelectorAll('.work-container button');
 for (const item of projects) {
 let list = ``;
   for (const item1 of item.language) {
     list = list + `<li>${item1}</li>`
   }
-let projectPopupContent = `
+let projectPopupContent = `<div id ="${item.id}" class="popup-container">
 <div class="headline-language">
   <div class="headline-cross">
     <h1>${item.h1}</h1>
@@ -113,8 +116,18 @@ let projectPopupContent = `
       <a href="${item.btn2}"><button class="see-source">See live <img src="./icons/Icon -GitHub.png" alt=""></button></a>
     </div>
   </div>
+</div>
 </div>`;
-projectPopup.innerHTML=projectPopupContent;
-body.appendChild(projectPopup); 
+main.innerHTML+=projectPopupContent;
 };
 
+let projectButtons = document.querySelectorAll('.work-container button');
+let projectList= document.querySelectorAll('.popup-container');
+
+for (let i = 0; i<projectButtons.length;i++) {
+  console.log(i);
+  projectButtons[i].addEventListener('click', () => {
+    console.log("button clicked");
+    projectList[0].style.display = 'flex';
+  });
+};

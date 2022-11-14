@@ -940,7 +940,7 @@ footer {
 
 .popup-container {
   background-color: #fff;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 16px;
   position: fixed;
