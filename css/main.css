@@ -250,6 +250,39 @@ header {
   border: 1px solid #8993a4;
 }
 
+.menu-content {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #3c3a39;
+}
+
+.menu-content img {
+  justify-self: center;
+  align-self: end;
+  margin-top: 40px;
+  margin-right: 38px;
+}
+
+.menu-content a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #6f6c6b;
+  margin: 24px 24px 0 24px;
+  padding-left: 16px;
+}
+
 .used-language-1 li a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
