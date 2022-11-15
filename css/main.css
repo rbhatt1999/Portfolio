@@ -996,6 +996,7 @@ footer {
 
 .image-paragraph-button > img {
   width: 100%;
+  max-width: 300px;
   align-self: center;
 }
 
