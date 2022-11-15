@@ -172,7 +172,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
 const backImage = document.querySelectorAll('.projects-info');
 for (let i = 0; i < backImage.length; i += 1) {
-  backImage[i].style.backgroundImage = `url(.${projects[i + 1].background})`;
+  backImage[i].style.backgroundImage = `url(${projects[i + 1].background})`;
 }
 
 for (let i = 0; i < projects.length; i += 1) {
