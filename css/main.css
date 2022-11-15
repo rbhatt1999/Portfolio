@@ -283,7 +283,12 @@ header {
   padding-left: 16px;
 }
 
-.used-language-1 li a {
+.buttons a {
+  text-decoration: none;
+}
+
+.used-language-1 li a,
+.used-language-1 li {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -315,7 +320,6 @@ header {
 
 .projects-info {
   background-color: black;
-  background-image: url(../images/project-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -357,9 +361,6 @@ header {
   list-style: none;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-.used-language-2 li a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -453,7 +454,7 @@ header {
   }
 
   .projects:hover {
-    transform: scale(1.06);
+    transform: scale(1.02);
   }
 
   .projects p {
@@ -500,8 +501,7 @@ header {
 
   .project-1 img {
     padding: 0;
-    width: auto;
-    height: auto;
+    max-width: 100%;
   }
 
   .project-1 p {
@@ -565,7 +565,8 @@ header {
   color: #f4f5f7;
 }
 
-.about-me-text button {
+.about-me-text button,
+.popup-container button {
   margin: 24px 0 0 0;
   width: 161px;
   height: 48px;
@@ -580,23 +581,35 @@ header {
   transition: all 400ms linear 1ms;
 }
 
-.project-1 button:enabled {
+.buttons button {
+  margin: 0;
+  max-width: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-1 button:enabled,
+.popup-container button:enabled {
   background: #ff6b00;
   color: #fff;
 }
 
-.project-1 button:hover {
+.project-1 button:hover,
+.popup-container button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
 
-.project-1 button:active {
+.project-1 button:active,
+.popup-container button:active {
   background: #e05304;
   color: #fff;
 }
 
-.project-1 button:disabled {
+.project-1 button:disabled,
+.popup-container button:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
@@ -929,5 +942,123 @@ footer {
   #message:hover {
     padding-top: 25px;
     color: blue;
+  }
+}
+
+.popup-container {
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  padding: 16px;
+  position: fixed;
+  top: 2.52%;
+  right: 4.8%;
+  left: 4.8%;
+  bottom: 2.52%;
+}
+
+.headline-cross {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline-cross img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.headline-language {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.headline-language ul {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.headline-cross h1 {
+  margin: 0;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.image-paragraph-button {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-paragraph-button > img {
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+
+.image-paragraph-button p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 0;
+}
+
+.paragraph-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 941px) {
+  .popup-container {
+    left: 6%;
+    right: 6%;
+  }
+
+  .headline-language {
+    row-gap: 0;
+  }
+
+  .image-paragraph-button {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .image-paragraph-button > img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 940px) {
+  .image-paragraph-button > img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 370px) {
+  .popup-container h1 {
+    font-size: 24px;
+  }
+
+  .popup-container p {
+    font-size: 14px;
+  }
+
+  .popup-container button {
+    width: 102px;
   }
 }
