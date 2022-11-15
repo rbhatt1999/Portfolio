@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const menuDiv = document.createElement('div');
 menuDiv.className = 'menu-content';
 menuDiv.style.display = 'none';
-const main= document.querySelector('main');
+const main = document.querySelector('main');
 
 const divContent = '<img class="cross-icon" src="./icons/cross.png" alt=""> <a href="#portfolio">Portfolio</a> <a href="#aboutMe">About</a> <a href="#contactForm">Contact</a>';
 menuDiv.innerHTML = divContent;
@@ -25,81 +25,80 @@ itemList.forEach((item) => {
   });
 });
 
-
-let projects = [
+const projects = [
   {
-    id:"project1",
-    h1:'Multi-Post Stories',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    language: ['css','html','bootstrap', 'Ruby'],
+    id: 'project1',
+    h1: 'Multi-Post Stories',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    language: ['css', 'html', 'bootstrap', 'Ruby'],
     image: './images/Project-1.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id:"project2",
-    h1:'Profesional Art Printing Data',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    language: ['html','bootstrap', 'Ruby'],
+    id: 'project2',
+    h1: 'Profesional Art Printing Data',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id:"project3",
-    h1:'Profesional Art Printing Data',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    language: ['html','bootstrap', 'Ruby'],
+    id: 'project3',
+    h1: 'Profesional Art Printing Data',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id:"project4",
-    h1:'Profesional Art Printing Data',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    language: ['html','bootstrap', 'Ruby'],
+    id: 'project4',
+    h1: 'Profesional Art Printing Data',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id:"project5",
-    h1:'Profesional Art Printing Data',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    language: ['html','bootstrap', 'Ruby'],
+    id: 'project5',
+    h1: 'Profesional Art Printing Data',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id:"project6",
-    h1:'Profesional Art Printing Data',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    language: ['html','bootstrap', 'Ruby'],
+    id: 'project6',
+    h1: 'Profesional Art Printing Data',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id:"project7",
-    h1:'Profesional Art Printing Data',
-    p:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    language: ['html','bootstrap', 'Ruby'],
+    id: 'project7',
+    h1: 'Profesional Art Printing Data',
+    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
-    btn1:'https://rbhatt1999.github.io/Portfolio/',
-    btn2:'https://github.com/rbhatt1999/portfolio'
-  }  
+    btn1: 'https://rbhatt1999.github.io/Portfolio/',
+    btn2: 'https://github.com/rbhatt1999/portfolio',
+  },
 ];
 
-let projectArray =[];
+const projectArray = [];
 
-for (const item of projects) {
-let list = ``;
-  for (const item1 of item.language) {
-    list = list + `<li>${item1}</li>`
-  }
-let projectPopupContent = `<div class="headline-language">
+projects.forEach((item) => {
+  let list = '';
+  item.language.forEach((item1) => {
+    list += `<li>${item1}</li>`;
+  });
+  const projectPopupContent = `<div class="headline-language">
   <div class="headline-cross">
     <h1>${item.h1}</h1>
     <img src="./icons/cross.png" alt="">
@@ -118,29 +117,29 @@ let projectPopupContent = `<div class="headline-language">
     </div>
   </div>
 </div>`;
-projectArray.push(projectPopupContent);
-};
+  projectArray.push(projectPopupContent);
+});
 
-for (let i = 0;i<projects.length;i++) {
-  projects[i].id =document.createElement('div');
-  projects[i].id.className='popup-container';
-  projects[i].id.innerHTML= projectArray[i];
+for (let i = 0; i < projects.length; i += 1) {
+  projects[i].id = document.createElement('div');
+  projects[i].id.className = 'popup-container';
+  projects[i].id.innerHTML = projectArray[i];
   body.appendChild(projects[i].id);
-};
+}
 
-let projectButtons = document.querySelectorAll('.work-container button');
-let projectList= document.querySelectorAll('.popup-container');
-for (let i = 0; i<projectButtons.length;i++) {
+const projectButtons = document.querySelectorAll('.work-container button');
+const projectList = document.querySelectorAll('.popup-container');
+for (let i = 0; i < projectButtons.length; i += 1) {
   projectButtons[i].addEventListener('click', () => {
     projectList[i].style.display = 'flex';
-    main.style.filter='blur(10px)';
+    main.style.filter = 'blur(10px)';
   });
-};
+}
 
-let crossList = document.querySelectorAll('.headline-cross>img');
-for (let i = 0; i<crossList.length;i++) {
+const crossList = document.querySelectorAll('.headline-cross>img');
+for (let i = 0; i < crossList.length; i += 1) {
   crossList[i].addEventListener('click', () => {
     projectList[i].style.display = 'none';
-    main.style.filter='blur(0)';
+    main.style.filter = 'blur(0)';
   });
-};
+}

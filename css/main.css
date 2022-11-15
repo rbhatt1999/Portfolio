@@ -283,6 +283,10 @@ header {
   padding-left: 16px;
 }
 
+.buttons a {
+  text-decoration: none;
+}
+
 .used-language-1 li a,
 .used-language-1 li {
   text-decoration: none;
@@ -501,8 +505,7 @@ header {
 
   .project-1 img {
     padding: 0;
-    width: auto;
-    height: auto;
+    max-width: 100%;
   }
 
   .project-1 p {
@@ -580,6 +583,14 @@ header {
   color: #fff;
   cursor: pointer;
   transition: all 400ms linear 1ms;
+}
+
+.buttons button {
+  margin: 0;
+  max-width: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .project-1 button:enabled,
@@ -1008,24 +1019,12 @@ footer {
 
 .buttons {
   display: flex;
-  column-gap: 20px;
+  gap: 20px;
   padding-top: 10px;
   flex-wrap: wrap;
 }
 
-.buttons button {
-  margin: 0;
-  max-width: 134px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.buttons a {
-  text-decoration: none;
-}
-
-@media (min-width: 981px) {
+@media (min-width: 941px) {
   .popup-container {
     left: 6%;
     right: 6%;
@@ -1045,29 +1044,9 @@ footer {
   }
 }
 
-@media (min-width: 500px) and (max) {
-  .popup-container {
-    left: 6%;
-    right: 6%;
-  }
-
-  .headline-language {
-    row-gap: 0;
-  }
-
-  .image-paragraph-button {
-    flex-direction: row;
-    column-gap: 20px;
-  }
-
+@media (min-width: 500px) and (max-width: 940px) {
   .image-paragraph-button > img {
     width: 60%;
-  }
-}
-
-@media (min-width: 531px) and (max-width: 980px) {
-  .image-paragraph-button > img {
-    max-width: 512px;
   }
 }
 
