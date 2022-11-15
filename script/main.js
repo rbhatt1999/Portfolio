@@ -27,7 +27,7 @@ itemList.forEach((item) => {
 
 const projects = [
   {
-    id: 'project1',
+    id: 'project-1',
     h1: 'Multi-Post Stories',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     language: ['css', 'html', 'bootstrap', 'Ruby'],
@@ -36,56 +36,62 @@ const projects = [
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id: 'project2',
+    id: 'project-2',
     h1: 'Profesional Art Printing Data',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
+    background: './images/Project-2.png',
     btn1: 'https://rbhatt1999.github.io/Portfolio/',
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id: 'project3',
+    id: 'project-3',
     h1: 'Profesional Art Printing Data',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
+    background: './images/Project-2.png',
     btn1: 'https://rbhatt1999.github.io/Portfolio/',
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id: 'project4',
+    id: 'project-4',
     h1: 'Profesional Art Printing Data',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
+    background: './images/Project-2.png',
     btn1: 'https://rbhatt1999.github.io/Portfolio/',
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id: 'project5',
+    id: 'project-5',
     h1: 'Profesional Art Printing Data',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
+    background: './images/Project-2.png',
     btn1: 'https://rbhatt1999.github.io/Portfolio/',
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id: 'project6',
+    id: 'project-6',
     h1: 'Profesional Art Printing Data',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
+    background: './images/Project-2.png',
     btn1: 'https://rbhatt1999.github.io/Portfolio/',
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
   {
-    id: 'project7',
+    id: 'project-7',
     h1: 'Profesional Art Printing Data',
     p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     language: ['html', 'bootstrap', 'Ruby'],
     image: './images/Project-3.png',
+    background: './images/Project-2.png',
     btn1: 'https://rbhatt1999.github.io/Portfolio/',
     btn2: 'https://github.com/rbhatt1999/portfolio',
   },
@@ -93,11 +99,43 @@ const projects = [
 
 const projectArray = [];
 
+
+
+const projectArrayPopup = [];
 projects.forEach((item) => {
   let list = '';
   item.language.forEach((item1) => {
     list += `<li>${item1}</li>`;
   });
+  
+  if(item.id =="project-1"){
+  const projectContent = `<div class="${item.id}">
+  <a href="#" rel="noopener" class="project-1-img"><img src="${item.image}" alt="Multi-Post Stories Project Overview"></a>
+  <div class="project-info">
+    <h3>${item.h1}</h3>
+    <p>${item.p}</p>
+    <ul class="used-language-1">
+    ${list}
+    </ul>
+    <button>See Project</button>
+  </div>
+</div>`;
+projectArray.push(projectContent);
+  }
+  else {
+    const projectContent =`<div class="${item.id} projects">
+    <div class="projects-info">
+      <h3>${item.h1}</h3>
+      <p>${item.p}</p>
+      <ul class="used-language-2">
+      ${list}
+      </ul>
+    </div>
+    <button>See Project</button>
+  </div>`;
+  projectArray.push(projectContent);
+  }
+
   const projectPopupContent = `<div class="headline-language">
   <div class="headline-cross">
     <h1>${item.h1}</h1>
@@ -117,14 +155,36 @@ projects.forEach((item) => {
     </div>
   </div>
 </div>`;
-  projectArray.push(projectPopupContent);
+  projectArrayPopup.push(projectPopupContent);
 });
 
+let workSection = document.querySelector('.work-container');
 for (let i = 0; i < projects.length; i += 1) {
-  projects[i].id = document.createElement('div');
-  projects[i].id.className = 'popup-container';
-  projects[i].id.innerHTML = projectArray[i];
-  body.appendChild(projects[i].id);
+  if(projects[i].id == "project-1"){
+    projects[i].div = document.createElement('div');
+    projects[i].div.className = `${projects[i].id}`;
+    projects[i].div.innerHTML = projectArray[i];
+    workSection.appendChild(projects[i].div);
+  }
+  else {
+    projects[i].div = document.createElement('div');
+    projects[i].div.className = `${projects[i].id} projects`;
+    projects[i].div.innerHTML = projectArray[i];
+    workSection.appendChild(projects[i].div);
+  }
+}
+
+let backImage = document.querySelectorAll('.projects-info');
+for (let i = 0; i < backImage.length; i += 1){
+  backImage[i].style.backgroundImage = `url(.${projects[i+1].background})`;
+}
+
+
+for (let i = 0; i < projects.length; i += 1) {
+  projects[i].div = document.createElement('div');
+  projects[i].div.className = 'popup-container';
+  projects[i].div.innerHTML = projectArrayPopup[i];
+  body.appendChild(projects[i].div);
 }
 
 const projectButtons = document.querySelectorAll('.work-container button');
