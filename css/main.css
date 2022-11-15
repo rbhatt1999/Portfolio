@@ -959,6 +959,7 @@ footer {
 
 .headline-cross img {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .headline-language {
