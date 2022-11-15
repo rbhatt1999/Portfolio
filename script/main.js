@@ -136,3 +136,11 @@ for (let i = 0; i<projectButtons.length;i++) {
     main.style.filter='blur(10px)';
   });
 };
+
+let crossList = document.querySelectorAll('.headline-cross>img');
+for (let i = 0; i<crossList.length;i++) {
+  crossList[i].addEventListener('click', () => {
+    projectList[i].style.display = 'none';
+    main.style.filter='blur(0)';
+  });
+};
