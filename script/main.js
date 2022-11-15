@@ -99,17 +99,15 @@ const projects = [
 
 const projectArray = [];
 
-
-
 const projectArrayPopup = [];
 projects.forEach((item) => {
   let list = '';
   item.language.forEach((item1) => {
     list += `<li>${item1}</li>`;
   });
-  
-  if(item.id =="project-1"){
-  const projectContent = `<div class="${item.id}">
+
+  if (item.id === 'project-1') {
+    const projectContent = `<div class="${item.id}">
   <a href="#" rel="noopener" class="project-1-img"><img src="${item.image}" alt="Multi-Post Stories Project Overview"></a>
   <div class="project-info">
     <h3>${item.h1}</h3>
@@ -120,10 +118,9 @@ projects.forEach((item) => {
     <button>See Project</button>
   </div>
 </div>`;
-projectArray.push(projectContent);
-  }
-  else {
-    const projectContent =`<div class="${item.id} projects">
+    projectArray.push(projectContent);
+  } else {
+    const projectContent = `<div class="${item.id} projects">
     <div class="projects-info">
       <h3>${item.h1}</h3>
       <p>${item.p}</p>
@@ -133,7 +130,7 @@ projectArray.push(projectContent);
     </div>
     <button>See Project</button>
   </div>`;
-  projectArray.push(projectContent);
+    projectArray.push(projectContent);
   }
 
   const projectPopupContent = `<div class="headline-language">
@@ -158,15 +155,14 @@ projectArray.push(projectContent);
   projectArrayPopup.push(projectPopupContent);
 });
 
-let workSection = document.querySelector('.work-container');
+const workSection = document.querySelector('.work-container');
 for (let i = 0; i < projects.length; i += 1) {
-  if(projects[i].id == "project-1"){
+  if (projects[i].id === 'project-1') {
     projects[i].div = document.createElement('div');
     projects[i].div.className = `${projects[i].id}`;
     projects[i].div.innerHTML = projectArray[i];
     workSection.appendChild(projects[i].div);
-  }
-  else {
+  } else {
     projects[i].div = document.createElement('div');
     projects[i].div.className = `${projects[i].id} projects`;
     projects[i].div.innerHTML = projectArray[i];
@@ -174,11 +170,10 @@ for (let i = 0; i < projects.length; i += 1) {
   }
 }
 
-let backImage = document.querySelectorAll('.projects-info');
-for (let i = 0; i < backImage.length; i += 1){
-  backImage[i].style.backgroundImage = `url(.${projects[i+1].background})`;
+const backImage = document.querySelectorAll('.projects-info');
+for (let i = 0; i < backImage.length; i += 1) {
+  backImage[i].style.backgroundImage = `url(.${projects[i + 1].background})`;
 }
-
 
 for (let i = 0; i < projects.length; i += 1) {
   projects[i].div = document.createElement('div');
