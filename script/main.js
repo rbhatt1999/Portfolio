@@ -199,24 +199,23 @@ for (let i = 0; i < crossList.length; i += 1) {
   });
 }
 
-let form = document.querySelector(".contact-form>form");
-let email = document.querySelector("#email");
-let errorMsg = document.querySelector(".error-msg");
-form.addEventListener('submit', (event)=>{
-  if(email.value.toLowerCase() != email.value) {
+const form = document.querySelector('.contact-form>form');
+const email = document.querySelector('#email');
+const errorMsg = document.querySelector('.error-msg');
+form.addEventListener('submit', (event) => {
+  if (email.value.toLowerCase() !== email.value) {
     event.preventDefault();
   }
 });
 
 email.addEventListener('input', () => {
-  if(email.value.toLowerCase() != email.value){
-    email.classList.toggle("invalid");
-    errorMsg.textContent = "The email must be in lowercase letters";
-    errorMsg.classList.toggle("d-hide");
-  }
-  else {
-    email.classList.remove("invalid");
-    errorMsg.textContent = "";
+  if (email.value.toLowerCase() !== email.value) {
+    email.classList.toggle('invalid');
+    errorMsg.textContent = 'The email must be in lowercase letters';
+    errorMsg.classList.toggle('d-hide');
+  } else {
+    email.classList.remove('invalid');
+    errorMsg.textContent = '';
     errorMsg.classList.add('d-hide');
   }
 });
