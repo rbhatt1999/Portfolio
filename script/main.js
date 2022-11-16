@@ -198,3 +198,12 @@ for (let i = 0; i < crossList.length; i += 1) {
     main.style.filter = 'blur(0)';
   });
 }
+
+let form = document.querySelector(".contact-form>form");
+let email = document.querySelector("#email");
+let errorMsg = document.querySelector(".error-msg");
+form.addEventListener('submit', (event)=>{
+  if(email.value.toLowerCase() != email.value) {
+    event.preventDefault();
+  }
+});
