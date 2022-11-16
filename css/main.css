@@ -811,6 +811,19 @@ header {
   transition: all 200ms linear 1ms;
 }
 
+.invalid {
+  border-color: red;
+  color: red;
+}
+
+.error-msg {
+  background-color: #f43;
+  color: #fff;
+  padding: 4px 6px;
+  width: 100%;
+  display: inline-block;
+}
+
 #email::placeholder {
   color: #979493;
 }
@@ -941,7 +954,6 @@ footer {
   #email:hover,
   #message:hover {
     padding-top: 25px;
-    color: blue;
   }
 }
 
@@ -1061,4 +1073,8 @@ footer {
   .popup-container button {
     width: 102px;
   }
+}
+
+.d-hide {
+  display: none;
 }
