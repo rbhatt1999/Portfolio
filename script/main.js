@@ -219,3 +219,18 @@ email.addEventListener('input', () => {
     errorMsg.classList.add('d-hide');
   }
 });
+
+const inputField = document.querySelectorAll('.input-field');
+
+let field= {
+  name: "",
+  email: "",
+  message: ""
+}
+
+inputField.forEach((input) => {
+  input.addEventListener('input', (event) => {
+    field[input.name]= input.value;
+    localStorage.setItem('formData', JSON.stringify(field));
+  })
+})
