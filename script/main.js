@@ -219,3 +219,25 @@ email.addEventListener('input', () => {
     errorMsg.classList.add('d-hide');
   }
 });
+
+const inputField = document.querySelectorAll('.input-field');
+
+const field = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+inputField.forEach((input) => {
+  input.addEventListener('input', () => {
+    field[input.name] = input.value;
+    localStorage.setItem('formData', JSON.stringify(field));
+  });
+});
+
+const formStorage = JSON.parse(localStorage.getItem('formData'));
+if (formStorage) {
+  inputField.forEach((item) => {
+    item.value = formStorage[item.name];
+  });
+}
