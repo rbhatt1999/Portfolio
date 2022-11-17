@@ -234,3 +234,10 @@ inputField.forEach((input) => {
     localStorage.setItem('formData', JSON.stringify(field));
   })
 })
+
+let formStorage = JSON.parse(localStorage.getItem('formData'));
+if (formStorage) {
+  inputField.forEach((item)=>{
+    item.value = formStorage[item.name];
+  })
+}
