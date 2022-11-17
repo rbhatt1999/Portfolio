@@ -210,9 +210,9 @@ form.addEventListener('submit', (event) => {
 
 email.addEventListener('input', () => {
   if (email.value.toLowerCase() !== email.value) {
-    email.classList.toggle('invalid');
+    email.classList.add('invalid');
     errorMsg.textContent = 'The email must be in lowercase letters';
-    errorMsg.classList.toggle('d-hide');
+    errorMsg.classList.remove('d-hide');
   } else {
     email.classList.remove('invalid');
     errorMsg.textContent = '';
